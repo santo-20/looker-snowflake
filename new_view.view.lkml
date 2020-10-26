@@ -1,7 +1,6 @@
 view: new_view {
   derived_table: {
-    sql: WITH sql_runner_query1 AS (select * from NETFLIX_CUSTOMER_PAYMENTS_AGG_METRICS
-      )
+    sql: WITH sql_runner_query1 AS (select * from NETFLIX_CUSTOMER_PAYMENTS_AGG_METRICS)
 SELECT
   sql_runner_query1."CUSTOMER_ID"  AS "sql_runner_query1.customer_id",
   sql_runner_query1."CUSTOMERGENDER"  AS "sql_runner_query1.customergender",

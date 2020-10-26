@@ -1,7 +1,6 @@
 view: sql_runner_query1 {
   derived_table: {
-    sql: select * from NETFLIX_CUSTOMER_PAYMENTS_AGG_METRICS;
-      ;;
+    sql: select * from NETFLIX_CUSTOMER_PAYMENTS_AGG_METRICS;;
   }
 
   measure: count {
