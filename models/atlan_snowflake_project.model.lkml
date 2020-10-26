@@ -11,3 +11,9 @@ datagroup: atlan_snowflake_project_default_datagroup {
 }
 
 persist_with: atlan_snowflake_project_default_datagroup
+
+
+explore: orders_with_share_of_wallet_application {
+  label: "(5) Share of Wallet Analysis"
+  view_name: sql_runner_query1
+}
