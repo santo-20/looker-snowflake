@@ -22,3 +22,8 @@ explore: new_view {
   label: "new view"
   view_name: sql_runner_query1
 }
+
+explore: test_view {
+  label: "test view"
+  view_name: derived_view
+}
