@@ -27,3 +27,8 @@ explore: test_view {
   label: "test view"
   view_name: derived_view
 }
+
+explore: new_table_query_view {
+  label: "new table view"
+  view_name: new_table_query_view
+}
