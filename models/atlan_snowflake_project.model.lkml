@@ -32,3 +32,8 @@ explore: new_table_query_view {
   label: "new table view"
   view_name: new_table_query_view
 }
+
+explore: redshit_query_view{
+  label: "redshift table view"
+  view_name: redshit_query_view
+}
