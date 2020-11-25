@@ -10,7 +10,10 @@ datagroup: atlan_snowflake_project_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"
 }
-
+datagroup: redshit_project_default_datagroup {
+  # sql_trigger: SELECT MAX(id) FROM etl_log;;
+  max_cache_age: "1 hour"
+}
 
 persist_with: atlan_snowflake_project_default_datagroup
 
@@ -25,6 +28,11 @@ explore: new_view {
   view_name: sql_runner_query1
 }
 
+
+explore: index_all_interleaved {
+  label: "index_all_interleaved"
+  view_name: index_all_interleaved
+}
 
 
 explore: test_view {
