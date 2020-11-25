@@ -3,7 +3,7 @@ label: "1) Label From New Connection"
 
 
 include: "/*.view" # include all the views
-# include: "/*.dashboard" # include all the dashboards
+include: "/views/*.view" # include all the dashboards
 
 datagroup: atlan_snowflake_project_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
@@ -25,6 +25,11 @@ explore: orders_with_share_of_wallet_application {
 explore: new_view {
   label: "new view"
   view_name: sql_runner_query1
+}
+
+explore: index_all_interleaved {
+  label: "index_all_interleaved"
+  view_name: index_all_interleaved
 }
 
 explore: test_view {
