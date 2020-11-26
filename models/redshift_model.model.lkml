@@ -1,4 +1,5 @@
 connection: "atlan_snowflake"
+label: "1) Redshift connection explore"
 
 include: "/views/*.view.lkml"                # include all views in the views/ folder in this project
 # include: "/**/view.lkml"                   # include all views in this project
@@ -18,3 +19,11 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 #     sql_on: ${users.id} = ${orders.user_id} ;;
 #   }
 # }
+datagroup: redshit_project_default_datagroup {
+  # sql_trigger: SELECT MAX(id) FROM etl_log;;
+  max_cache_age: "1 hour"
+}
+explore: index_all_interleaved {
+  label: "index_all_interleaved"
+  view_name: index_all_interleaved
+}
