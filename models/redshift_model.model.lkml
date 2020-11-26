@@ -1,4 +1,4 @@
-connection: "atlan_snowflake"
+connection: "redshit"
 label: "1) Redshift connection explore"
 
 include: "/views/*.view.lkml"                # include all views in the views/ folder in this project
