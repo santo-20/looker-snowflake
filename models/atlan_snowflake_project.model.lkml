@@ -18,6 +18,7 @@ explore: orders_with_share_of_wallet_application {
   view_name: sql_runner_query1
 }
 
+explore: sql_runner_query_dervied_table {}
 explore: new_view {
   label: "new view"
   view_name: sql_runner_query1
