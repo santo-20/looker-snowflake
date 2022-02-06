@@ -10,6 +10,7 @@ view: sql_runner_query_dervied_table {
   }
 
   dimension: customer_id {
+    primary_key: yes
     type: string
     sql: ${TABLE}."CUSTOMER_ID" ;;
   }
