@@ -1,6 +1,6 @@
 view: sql_runner_query_dervied_table {
   derived_table: {
-    sql: select * from PUBLIC.NETFLIX_CUSTOMER_PAYMENTS_BY_TYPE_NISH LIMIT 100
+    sql: select * from PUBLIC.NETFLIX_CUSTOMER_PAYMENTS_BY_TYPE_NISH
       ;;
   }
 
