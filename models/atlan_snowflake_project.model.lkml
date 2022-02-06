@@ -6,6 +6,7 @@ include: "/views/*.view" # include all the dashboards
 
 datagroup: atlan_snowflake_project_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
+  interval_trigger: "1 hour"
   max_cache_age: "1 hour"
 }
 
