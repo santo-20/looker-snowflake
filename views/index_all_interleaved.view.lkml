@@ -1,6 +1,6 @@
 view: index_all_interleaved {
   sql_table_name: public.index_all_interleaved ;;
-
+# test
   dimension: area {
     type: string
     sql: ${TABLE}.area ;;
